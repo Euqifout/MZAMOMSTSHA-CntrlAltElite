@@ -1,0 +1,35 @@
+#homePage{
+    width: 100%;
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.flex-container{
+    text-align: center;
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black ;
+}
+a{
+    color: black;
+    font-family: "Apple Chancery", cursive;
+}
+
+h1{
+    background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Rubik Scribble", system-ui;
+}
+
