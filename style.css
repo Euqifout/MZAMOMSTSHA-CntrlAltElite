@@ -47,4 +47,47 @@ p{
 
 /*-- About Page --*/
 
+#AboutPage{
+    width: 100%;
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.bodyInfo{
+    height: 80px;
+    text-align: center;
+    align-content: space-between;
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black ;
+}
+.bodyInfo a{
+    color: black;
+    font-size: 20px;
+    font-family: "Apple Chancery", cursive;
+}
+.bodyInfo  h2{
+    background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
+    text-align: center;
+    font-size: 30px;
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+.bodyInfo  h3{
+    background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
+    text-align: center;
+    font-size: 30px;
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+.bodyInfo p{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    font-family: "Rubik Scribble", system-ui;
+}
+
 /*-- About events --*/
