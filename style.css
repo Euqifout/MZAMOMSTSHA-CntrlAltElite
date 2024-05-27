@@ -68,21 +68,21 @@ p{
     font-size: 20px;
     font-family: "Apple Chancery", cursive;
 }
-.bodyInfo  h2{
+.otherInfo  h2{
     background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
     text-align: center;
     font-size: 30px;
     font-family: "Kaushan Script", cursive;
     font-style: normal;
 }
-.bodyInfo  h3{
+.otherInfo h3{
     background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
     text-align: center;
     font-size: 30px;
     font-family: "Kaushan Script", cursive;
     font-style: normal;
 }
-.bodyInfo p{
+.otherInfo p{
     color: white;
     text-align: center;
     font-size: 10px;
