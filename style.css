@@ -2,7 +2,7 @@
 /*-- About Page --*/
 #homePage{
     width: 100%;
-    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -71,21 +71,24 @@ p{
 .aboutUsInfo  h2{
     background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 100;
     font-family: "Kaushan Script", cursive;
     font-style: normal;
 }
 .aboutUsInfo h3{
     background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 100;
     font-family: "Kaushan Script", cursive;
     font-style: normal;
 }
 .aboutUsInfo p{
     color: white;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
+    font-weight: 100;
     font-style: italic;
     font-family: "Rubik Scribble", system-ui;
 }
