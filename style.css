@@ -6,7 +6,9 @@
     height: 100vh;
 }
 .flex-container{
+    height: 80px;
     text-align: center;
+    align-content: space-between;
     background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -14,9 +16,9 @@
 }
 a{
     color: black;
+    font-size: 20px;
     font-family: "Apple Chancery", cursive;
 }
-
 h1{
     background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
     text-align: center;
@@ -33,3 +35,6 @@ p{
     font-family: "Rubik Scribble", system-ui;
 }
 
+/*-- About Page --*/
+
+/*-- About events --*/
