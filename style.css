@@ -13,7 +13,7 @@
     align-content: space-between;
     background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     border: 1px solid black ;
 }
 
@@ -30,7 +30,9 @@ a{
     font-family: "Apple Chancery", cursive;
 }
 h1{
-    background: linear-gradient(rgb(243, 240, 240), #1cabe4c5);
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
     text-align: center;
     font-size: 50px;
     font-weight: 400;
