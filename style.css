@@ -1,3 +1,5 @@
+
+/*-- About Page --*/
 #homePage{
     width: 100%;
     background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
@@ -13,6 +15,14 @@
     background-size: cover;
     background-position: center;
     border: 1px solid black ;
+}
+
+/*-- Logo --*/
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 1%;
+    right: 4%;
 }
 a{
     color: black;
