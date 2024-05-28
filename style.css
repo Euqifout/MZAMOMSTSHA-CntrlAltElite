@@ -29,7 +29,23 @@ header1{
     align-items: center;
 }
 header1 .logo{
-    position: relative;
+    width: 200px;
+    position: absolute;
+    top: 1%;
+    left: 4%;
+}
+header1 .navigation input{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: black;
+    background: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+
 }
 header1 .navigation a{
     color: black;
@@ -86,6 +102,20 @@ header1 .navigation a:hover{
 }
 .media-icons{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.media-icons a{
+    position: relative;
+    color: white;
+    font-size: 25px;
+}
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-icons a:hover{
+    transform: scale(1.5);
 }
 
 /*-- Logo --*/
