@@ -1,8 +1,7 @@
 
-<<<<<<< HEAD
 /*-- Home Page --*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+{
    margin: 0;
    padding: 0;
    box-sizing: boarder-box;
@@ -84,10 +83,41 @@ header1 .navigation a:hover{
 .content .btnInfo:hover {
     background: white;
     color: black;
+}
+.media-icons{
+    display: flex;
+}
+a{
+    color: black;
+    font-size: 20px;
+    font-family: "Apple Chancery", cursive;
+}
+h1{
+    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+ p{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Rubik Scribble", system-ui;
+}
+/*-- Logo --*/
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 1%;
+    right: 4%;
+}
 
-=======
-/* styles.css */
-
+/*-- About Page --*/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -100,7 +130,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
->>>>>>> de107d6e3ac54013f7bd2c65fe74051c0b735df4
+
 }
 
 h1, h2 {
@@ -147,4 +177,6 @@ footer p {
     margin: 0;
 }
 
+
+/*-- contact Page --*/
 
