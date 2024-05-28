@@ -1,54 +1,62 @@
 
-/*-- Home Page --*/
-#homePage{
-    width: 100%;
-    background: linear-gradient(rgba(10, 66, 77, 0.541), #1cabe4a6) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-.flex-container{
-    height: 80px;
-    text-align: center;
-    align-content: space-between;
-    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
-    background-size: cover;
-    background-position: top;
-    border: 1px solid black ;
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;  
+    background: linear-gradient(#226A80, #fff );
 }
 
-/*-- Logo --*/
-.logo{
-    width: 200px;
-    position: absolute;
-    top: 1%;
-    right: 4%;
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
-a{
+
+h1, h2 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    /* background: #fff; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 1.1em;
     color: black;
-    font-size: 20px;
-    font-family: "Apple Chancery", cursive;
 }
-h1{
-    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+
+footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    font-size: 50px;
-    font-weight: 400;
-    font-family: "Kaushan Script", cursive;
-    font-style: normal;
-}
- p{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-style: italic;
-    font-family: "Rubik Scribble", system-ui;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/*-- About Page --*/
+footer p {
+    margin: 0;
+}
 
 
-
-/*-- contact Page --*/
