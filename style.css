@@ -1,20 +1,89 @@
 
 /*-- Home Page --*/
-#homePage{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: boarder-box;
+   font-family: "Poppins", sans-serif; 
+}
+section1{
+    position: relative;
     width: 100%;
-    background: linear-gradient(rgba(10, 66, 77, 0.541), #1cabe4a6) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(rgba(255, 255, 255, 0.781), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+
 }
-.flex-container{
-    height: 80px;
-    text-align: center;
-    align-content: space-between;
-    background: linear-gradient(rgba(243, 240, 240, 0.212), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
-    background-size: cover;
-    background-position: top;
-    border: 1px solid black ;
+header1{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+header1 .logo{
+    position: relative;
+}
+header1 .navigation a{
+    color: black;
+    background: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+header1 .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+header1 .navigation a:hover{
+    background: #226A80;
+    color: #fff;
+}
+.content{
+    max-width: 650px;
+    margin: 60px 100px;    
+}
+.content .info h2{
+    color: #226A80;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.content .info h2 span{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .info p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.content .btnInfo {
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.content .btnInfo:hover {
+    background: white;
+    color: black;
+
 }
 
 /*-- Logo --*/
