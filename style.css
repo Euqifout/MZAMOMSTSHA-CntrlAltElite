@@ -266,7 +266,7 @@ footer p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     background: linear-gradient(rgba(255, 255, 255, 0.849), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg) no-repeat;
     background-size: cover;
@@ -286,6 +286,7 @@ footer p {
     margin: auto;
     align-items: center;
     text-align: center; 
+    justify-content: flex-end;
 }
 .contact-col{
     display: flexbox;
@@ -315,10 +316,9 @@ footer p {
     margin-bottom: 10px ;
     font-weight: 100;
     color: #17afda;
-    font-weight: 400;
 }
 .contact-col input, .contact-col textarea{
-    width: 100%;
+    width: 50%;
     padding: 15px;
     text-align: left;
     margin-bottom: 10px ;
