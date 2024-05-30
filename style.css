@@ -180,7 +180,7 @@ buttons{
 }
 /*-- About Page --*/
 
-body {
+.aboutBody{
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -188,29 +188,34 @@ body {
     background: linear-gradient(#226A80, #fff );
 }
 
-header {
+.aboutUs {
     color: #fff;
     padding: 10px 0;
     text-align: center;
 
 }
 
-h1, h2 {
+.top h1, .aboutUs h2 {
     margin: 0;
     padding: 0.5em 0;
 }
 
-h1 {
+.top h1 {
     font-size: 2.5em;
+    text-align: center;
 }
 
-h2 {
+.aboutUs h2 {
     font-size: 2em;
     color: #333;
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 aboutUs {
+=======
+.aboutUs {
+>>>>>>> Stashed changes
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -219,7 +224,11 @@ aboutUs {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< Updated upstream
 aboutUs p {
+=======
+.aboutUs p {
+>>>>>>> Stashed changes
     margin: 10px 0;
     font-size: 1.1em;
     color: black;
