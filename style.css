@@ -28,7 +28,7 @@
      align-items: center;
  }
  .navPart .logo{
-     position: absolute;
+     position: relative;
      width: 200px;
      top: 4%;
      left: 4%;
@@ -116,9 +116,15 @@ buttons{
     .navPart .navigation{
         display: none;
     }
+    .navPart .logo{
+        position: relative;
+        width: 150px;
+        top: 4%;
+        left: 4%;
+    }
     buttons{
         display: block ;
-        font-size: 20px;
+        font-size: 25px;
         cursor: pointer;
         transition: 0.3s;
         transition-property: color;
@@ -145,7 +151,7 @@ buttons{
     #check:checked ~ .navPart .navigation a{
         font-weight: 700;
         margin-right: 0;
-        margin-bottom: 0;
+        margin-bottom: 50px;
         letter-spacing: 2px;
     }
     #check:checked ~ .navPart buttons .menu-btn{
