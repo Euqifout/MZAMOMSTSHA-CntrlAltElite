@@ -36,11 +36,11 @@
  .navPart .navigation a{
     color: #fff;
     background: #226A80;
-     text-decoration: none;
-     font-weight: 500;
-     letter-spacing: 1px;
-     padding: 2px 15px;
-     border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
  }
  .navPart .navigation a:not(:last-child){
      margin-right: 30px;
@@ -244,59 +244,78 @@ footer p {
 
 /*       location */
 .locaton{
-    width:80%;
+    width:50%;
     margin: auto;
+    align-items: flex-start;
     padding: 80px 0;
 }
 .location iframe{
-    width: 100%;
+    width: 50%;
 }
 .contact-us{
     position: relative;
-     width: 100%;
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     background: linear-gradient(rgba(255, 255, 255, 0.849), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg) no-repeat;
-     background-size: cover;
-     background-position: center;
-    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.849), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact-us h1{
+    text-align: center;
 }
 .contact-us .logo{
     position: absolute;
     width: 200px;
     top: 4%;
-    left: 4%;
+    right: 4%;
+}
+.row{
+    width:  50%;
+    margin: auto;
+    align-items: center;
+    text-align: center; 
 }
 .contact-col{
-    flex-basis: 48%;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: space-around;
     margin-bottom: 30px;
-}
-.contavt-col div{
-    display: flex;
     align-items: center;
-    margin-bottom: 40px;
 }
-.contact-col div .fa{
-    font-size: 28px;
-    color: #17afda;
-    margin: 10px;
-    margin-right: 30px;
+.contact-col .fa{  
+    width: 40px;
+    min-height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #226A80;
+    border: 1px solid white;
 }
-.contact-col div p{
+.contact-col  p{
     padding: 0;
+    text-align: center;
+    margin-bottom: 10px ;
+    font-weight: 100;
 }
-.contact-col div h5{
-    font-size: 20px;
-    margin-bottom: 5px;
+.contact-col  h5{
+    text-align: left;
+    margin-bottom: 10px ;
+    font-weight: 100;
     color: #17afda;
     font-weight: 400;
 }
 .contact-col input, .contact-col textarea{
     width: 100%;
     padding: 15px;
-    margin-bottom: 17px;
+    text-align: left;
+    margin-bottom: 10px ;
+    font-weight: 100;
     outline: none;
     border: 1px solid #17afda;
 }
@@ -304,6 +323,4 @@ footer p {
     border:1px solid #17afda;
     padding: 15px;
     background: #a7d0db;
-
-
 }
