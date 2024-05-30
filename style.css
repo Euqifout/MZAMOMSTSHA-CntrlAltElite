@@ -187,7 +187,6 @@ buttons{
     padding: 0;  
     background: linear-gradient(#226A80, #fff );
 }
-
 .aboutUs {
     color: #fff;
     padding: 10px 0;
@@ -195,6 +194,16 @@ buttons{
 
 }
 
+.aboutUs button{
+    background: linear-gradient(#226A80, #fff ); 
+    color:black; 
+    size: 15px; padding: 5px 20px 5px 20px; 
+    border:none; 
+    font-size:20px;
+}
+.aboutUs button:hover{
+    cursor: pointer;
+}
 .top h1, .aboutUs h2 {
     margin: 0;
     padding: 0.5em 0;
@@ -204,18 +213,12 @@ buttons{
     font-size: 2.5em;
     text-align: center;
 }
-
 .aboutUs h2 {
     font-size: 2em;
     color: #333;
     text-align: center;
 }
-
-<<<<<<< Updated upstream
-aboutUs {
-=======
 .aboutUs {
->>>>>>> Stashed changes
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -223,12 +226,7 @@ aboutUs {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-<<<<<<< Updated upstream
-aboutUs p {
-=======
 .aboutUs p {
->>>>>>> Stashed changes
     margin: 10px 0;
     font-size: 1.1em;
     color: black;
