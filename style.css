@@ -203,9 +203,11 @@ buttons{
     padding: 2px 15px;
     border-radius: 20px;
  }
- .top{
+ .butttonHome{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    margin-right: 200px ;
  }
  .top .butttonHome a:not(:last-child){
      margin-right: 30px;
@@ -278,7 +280,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: linear-gradient(rgba(255, 255, 255, 0.849), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg) no-repeat;
+    background: linear-gradient(rgba(226, 226, 226, 0.377), #1cabe46e) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -316,6 +318,7 @@ footer p {
    background: white;
    color: black;
 }
+/* Contact Page Contents*/
 .CPcontent{
     max-width: 650px;
     margin: 60px 100px;    
