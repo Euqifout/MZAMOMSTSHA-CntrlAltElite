@@ -33,6 +33,21 @@
      top: 4%;
      left: 4%;
  }
+ .homeContent{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info, .rightContent{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.info{
+    text-align: left;
+}
  .navPart .navigation a{
     color: #fff;
     background: #226A80;
@@ -49,6 +64,90 @@
     background: white;
     color: black;
  }
+
+.service_box{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column, row;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px ;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service img{    /*-- The picture--*/
+    width: 70%;
+    border-radius: 7px;    
+    width: 300px; 
+    height: 300px;
+    object-fit: cover; 
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgb(0, 0, 0),#f1137be0);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.servicedesc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.servicedesc p{
+    font-size: 20px;
+}
+.single-service:hover .servicedesc{
+    bottom: 20%;
+    opacity: 1;
+}
+@media screen and (max-width:770px){
+    .single-service img{
+        flex-basis: 100% ;
+        margin-bottom: 30px;
+    }
+    .servicedesc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .servicedesc{
+        bottom: 25% !important;
+    }
+}
+
  .content{
      max-width: 650px;
      margin: 60px 100px;    
@@ -195,8 +294,8 @@ buttons{
 }
 /*-- The Home button--*/
 .top .butttonHome a{
-    color: #fff;
-    background: #226A80;
+    color: black;
+    background: #ffffff;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -213,8 +312,8 @@ buttons{
      margin-right: 30px;
  }
  .top .butttonHome a:hover{
-    background: white;
-    color: black;
+    background: #226A80;
+    color: #fff;
  }
 /*-- The headding--*/
 .top h1, .aboutUs h2 {
@@ -264,7 +363,7 @@ footer p {
 /*-- contact Page --*/
 
 
-/*       location */
+/*--location --*/
 .locaton{
     float: left;
     width: 50%;
