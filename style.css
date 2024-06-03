@@ -3,8 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: boarder-box;
-    font-family: "Poppins", sans-serif; 
  }
  .topBox{
      position: relative;
@@ -33,21 +31,6 @@
      top: 4%;
      left: 4%;
  }
- .homeContent{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.info, .rightContent{
-    flex-basis: 45%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.info{
-    text-align: left;
-}
  .navPart .navigation a{
     color: #fff;
     background: #226A80;
@@ -64,13 +47,65 @@
     background: white;
     color: black;
  }
-
+ .homeContent{
+    width: 100%;
+    max-width: 650px;
+    margin: 50px ; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.homeContent .info h2{
+    color: #226A80;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.homeContent .info h2 span{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.homeContent .info p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.homeContent .btnInfo {
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.homeContent .btnInfo:hover {
+    background: white;
+    color: black;
+}
+.info{
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.rightContent {
+    flex-basis: 60%;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    
+}
 .service_box{
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column, row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-content: space-between;
     margin: auto;
 }
 .single-service{
@@ -95,7 +130,7 @@
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgb(0, 0, 0),#f1137be0);
+    background: linear-gradient(rgba(0, 0, 0, 0.822),#226a80);
     opacity: 0;
     transition: 1s;
 }
@@ -126,7 +161,7 @@ hr{
     width: 60%;
 }
 .servicedesc p{
-    font-size: 20px;
+    font-size: 15px;
 }
 .single-service:hover .servicedesc{
     bottom: 20%;
@@ -147,44 +182,6 @@ hr{
         bottom: 25% !important;
     }
 }
-
- .homeContent{
-     max-width: 650px;
-     margin: 60px 100px;    
- }
- .homeContent .info h2{
-     color: #226A80;
-     font-size: 55px;
-     text-transform: uppercase;
-     font-weight: 800;
-     letter-spacing: 2px;
-     line-height: 60px;
-     margin-bottom: 30px;
- }
- .homeContent .info h2 span{
-     color: #fff;
-     font-size: 50px;
-     font-weight: 600;
- }
- .homeContent .info p{
-     font-size: 16px;
-     font-weight: 500;
-     margin-bottom: 40px;
- }
- .homeContent .btnInfo {
-     color: #fff;
-     background: #226A80;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-weight: 700;
-     letter-spacing: 2px;
-     padding: 10px 20px;
-     border-radius: 5px;
- }
- .homeContent .btnInfo:hover {
-     background: white;
-     color: black;
- }
  .media-icons{
     display: flex;
     justify-content: flex-start;
@@ -193,7 +190,7 @@ hr{
 }
 .media-icons a{
     position: relative;
-    color: white;
+    color: #226A80;
     font-size: 25px;
     transition: 0.3s;
     transition-property: transform;
@@ -264,15 +261,15 @@ buttons{
     buttons .menu-btn{
         position: relative;
     }
-    .navPart .logo{
+    .homeContent .logo{
         position: absolute;
         bottom: -6px;
     }
-    .content .info h2{
+    .homeContent .info h2{
         font-size: 45px;
         line-height: 50px;
     }
-    .content .info h2 span{
+    .homeContent .info h2 span{
         font-size: 40px;
         font-weight: 600;
     }
