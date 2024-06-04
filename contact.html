@@ -1,58 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+    <title>bs4 contact form - Mzamomtsha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .contact-body{
+    margin-top:20px;
+    background:#eee;
+}
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    color: #fff;
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+
+    </style>
 </head>
-<body>
-    
+<body class="contact-body">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<div class="container">
+<div class="contact__wrapper shadow-lg mt-n9">
+<div class="row no-gutters">
+<div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+<h3 class="color--white mb-5">Get in Touch</h3>
+<ul class="contact-info__list list-style--none position-relative z-index-101">
+<li class="mb-4 pl-4">
+<span class="position-absolute"><i class="fas fa-envelope"></i></span>Mzamomtsha@gmail.com
+</li>
+<li class="mb-4 pl-4">
+<span class="position-absolute"><i class="fas fa-phone"></i></span> (021)-241454-545
+</li>
+<li class="mb-4 pl-4">
+<span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span> bootdey Technologies Inc.
+<br> 2694 Queen City Rainbow Drive
+<br> Florida 99161
+<div class="mt-3">
+<a href="https://www.google.com/maps" target="_blank" class="text-link link--right-icon text-white">Get directions <i class="link__icon fa fa-directions"></i></a>
+</div>
+</li>
+</ul>
+<figure class="figure position-absolute m-0 opacity-06 z-index-100" style="bottom:0; right: 10px">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444px" height="626px">
+<defs>
+<linearGradient id="PSgrad_1" x1="0%" x2="81.915%" y1="57.358%" y2="0%">
+<stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+<stop offset="100%" stop-color="rgb(0,54,207)" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<path fill-rule="evenodd" opacity="0.302" fill="rgb(72, 155, 248)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+<path fill="url(#PSgrad_1)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+</svg>
+</figure>
+</div>
+<div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+<form action="#" class="contact-form form-validate" novalidate="novalidate">
+<div class="row">
+<div class="col-sm-6 mb-3">
+<div class="form-group">
+<label class="required-field" for="firstName">First Name</label>
+<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Wendy">
+</div>
+</div>
+<div class="col-sm-6 mb-3">
+<div class="form-group">
+<label for="lastName">Last Name</label>
+<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Appleseed">
+</div>
+</div>
+<div class="col-sm-6 mb-3">
+<div class="form-group">
+<label class="required-field" for="email">Email</label>
+<input type="text" class="form-control" id="email" name="email" placeholder="wendy.apple@seed.com">
+</div>
+</div>
+<div class="col-sm-6 mb-3">
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input type="tel" class="form-control" id="phone" name="phone" placeholder="(021)-454-545">
+</div>
+</div>
+<div class="col-sm-12 mb-3">
+<div class="form-group">
+<label class="required-field" for="message">How can we help?</label>
+<textarea class="form-control" id="message" name="message" rows="4" placeholder="Hi there, I would like to....."></textarea>
+</div>
+</div>
+<div class="col-sm-12 mb-3">
+<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</form>
+</div>
 
-        <!--Contact Page background-->
-        <section class="contactPageBack">        
-            <header class="topContents">
-                <!--The logo-->
-                <img src="../MZAMOMSTSHA-CntrlAltElite/picFolder/logo2.png" class="logo">
-                <!--The Home and About Us Links -->
-                <div class="butttons">  <!--buttons has "ttt"-->
-                    <a href="main.html">HOME</a>
-                    <a href="aboutUs.html">ABOUT US</a>
-                </div>
-            </header>
-            <!--Content-->
-            <div class="CPcontent">
-                <div class="locaton">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463502.0141530437!2d18.377110616188055!3d-32.
-                    03336130574888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-                    %3A0x67a6a93df747dbac!2sMzamomtsha%20Primary!5e0!3m2!1sen!2sza!4v1716884999501!5m2!1sen!2sza" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> 
-                <div class="contactInfo">
-                    <div class="formBox1">                            
-                        <h2><a href="#"><i class="fa fa-home"></i></a>Mfuleni, Cape Town, 7100</h2>
-                        <2>XMW2+MG Khayelitsha, Cape Town</p>                  
-                        <h2><a href="#"><i class="fa fa-phone" ></i></a>+27 21 901 0005</h2>
-                        <p>Monday to Friday, 08AM to 2PM</p>                  
-                        <h2><a href="#"><i class="fa fa-envelope"></i></a>admissions@sandtonschoolgroup.co.za</h2>
-                        <p>Email us on your query</p>   
-
-                        <form action="#">
-                            <input type=" text" placeholder="Enter your name" required>
-                            <input type=" email" placeholder="Enter your email address" required>
-                            <input type=" text" placeholder="Enter your subject" required>
-                            <textarea rows="8" placeholder="Message" required></textarea>
-                            <button type="submit" class="hero-btn red-btn">Send Message</button>                        
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="media-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </section>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
 	
+</script>
 </body>
 </html>
