@@ -15,7 +15,7 @@
      background-size: cover;
      background-position: center;
  }
-
+/*
  .bottomBox{
     position: relative;
     width: 100%;
@@ -26,24 +26,30 @@
     background: white;
     background-size: cover;
     background-position: center;
-}
+}*/
  .navPart{
-     position: relative;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* 
+    position: relative;
      top: 0;
      width: 100%;
-     padding: 30px 100px;
-     display: flex;
-     flex-direction: column;
+     padding: 30px 100px;    
      justify-content: space-around ;
      align-items: flex-start;
+     */
  }
  .navPart .logo{
      position: relative;
      width: 200px;
-     top: 4%;
+     margin: 50px ; 
+     margin-right: 1%;
      left: 4%;
+     top: 4%;
+     
  }
- .navPart .navigation a{
+ /*.navPart .navigation a{
     color: #fff;
     background: #226A80;
     text-decoration: none;
@@ -59,10 +65,12 @@
     background: white;
     color: black;
  }
+ */
+
  .homeContent{
     width: 100%;
-    max-width: 650px;
-    margin: 50px ; 
+    max-width: 750px;
+    margin: 70px ; 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -105,16 +113,24 @@
     flex-basis: 45%;
     margin-bottom: 20px;
     text-align: left;
+    
 }
 .rightContent {
+    /*
+    text-align: center;
+    
+    justify-content: space-between;
+    align-items: center;
+    */
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+
 }
 .title-text{
-    color: #226A80;
+    color: #ffffff;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 400;
