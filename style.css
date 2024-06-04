@@ -267,7 +267,7 @@ hr{
 
 }
 /*-- The Home button--*/
-.top .butttonHome a{
+.butttonHome a{
     color: black;
     background: #ffffff;
     text-decoration: none;
@@ -282,10 +282,10 @@ hr{
     align-items: flex-end;
     margin-right: 200px ;
  }
- .top .butttonHome a:not(:last-child){
+ .butttonHome a:not(:last-child){
      margin-right: 30px;
  }
- .top .butttonHome a:hover{
+ .butttonHome a:hover{
     background: #226A80;
     color: #fff;
  }
