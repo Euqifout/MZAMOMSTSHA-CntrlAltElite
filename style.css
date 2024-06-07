@@ -10,7 +10,6 @@
      height: 100vh;
      display: flex;
      flex-direction: column;
-     justify-content: flex-start;
      background: linear-gradient(rgba(27, 171, 228, 0.459), rgba(255, 255, 255, 0.466)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
      background-size: cover;
      background-position: center;
@@ -30,15 +29,10 @@
  .navPart{
     position: relative;
     display: flex;
-    flex-direction: column;
-    /* 
-    position: relative;
-     top: 0;
-     width: 100%;
-     padding: 30px 100px;    
-     justify-content: space-around ;
-     align-items: flex-start;
-     */
+    flex-direction: column, row; 
+    justify-content: space-around ;
+    align-items: flex-start;
+     
  }
  .navPart .logo{
      position: relative;
@@ -49,32 +43,13 @@
      top: 4%;
      
  }
- /*.navPart .navigation a{
-    color: #fff;
-    background: #226A80;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 2px 15px;
-    border-radius: 20px;
- }
- .navPart .navigation a:not(:last-child){
-     margin-right: 30px;
- }
- .navPart .navigation a:hover{
-    background: white;
-    color: black;
- }
- */
-
  .homeContent{
-    width: 100%;
-    max-width: 750px;
-    margin: 70px ; 
+    width: 50%;
+    max-width: 500px;
+    margin: 50px ; 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 .homeContent .info h2{
     color: #226A80;
@@ -112,21 +87,15 @@
 .info{
     flex-basis: 45%;
     margin-bottom: 20px;
-    text-align: left;
-    
+    text-align: left;   
 }
 .rightContent {
-    /*
-    text-align: center;
-    
-    justify-content: space-between;
-    align-items: center;
-    */
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 5%;
 
 }
 .title-text{
@@ -142,23 +111,24 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column, row;
-    justify-content: space-around;
-    margin: auto; 
+    padding: 12px;
+    align-self: center;
+    justify-content: space-between;
+    /*margin: auto; */
 }
 .single-service{
     flex-basis: 48%;
     text-align: center;
     border-radius: 7px ;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: #fff;
     position: relative;
 }
 .single-service img{    /*-- The picture--*/
-    width: 70%;
+    width: 50%;
     border-radius: 7px;    
-    width: 300px; 
-    height: 300px;
+    width: 210px; 
+    height: 210px;
     object-fit: cover; 
 }
 .overlay{
@@ -176,7 +146,7 @@
     opacity: 1;
 }
 .servicedesc{
-    width: 80%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -195,8 +165,8 @@ hr{
     background: #fff;
     height: 2px;
     border: 0;
-    margin: 15px auto;
-    width: 60%;
+    margin: 10px auto;
+    width: 50%;
 }
 .servicedesc p{
     font-size: 15px;
