@@ -29,7 +29,6 @@
  .navPart{
     position: relative;
     display: flex;
-    flex-direction: column, row; 
     justify-content: space-around ;
     align-items: flex-start;
      
@@ -112,13 +111,13 @@
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     align-self: center;
     justify-content: space-between;
     /*margin: auto; */
 }
 .single-service{
-    flex-basis: 48%;
+    flex-basis: 50%;
     text-align: center;
     border-radius: 7px ;
     /* margin-bottom: 20px; */
@@ -216,9 +215,7 @@ hr{
 
 /*-- Responsive styles --*/
 @media (max-width: 960px){
-    .navPart .navigation{
-        display: none;
-    }
+ 
     .navPart .logo{
         position: relative;
         width: 150px;
