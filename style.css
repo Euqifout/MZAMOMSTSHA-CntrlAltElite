@@ -10,7 +10,7 @@
      height: 100vh;
      display: flex;
      flex-direction: column;
-     background: linear-gradient(rgba(27, 171, 228, 0.459), rgba(255, 255, 255, 0.466)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+     background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
      background-size: cover;
      background-position: center;
  }
@@ -201,7 +201,7 @@ hr{
 }
 .media-icons a{
     position: relative;
-    color: #226A80;
+    color: #ffffff;
     font-size: 25px;
     transition: 0.3s;
     transition-property: transform;
