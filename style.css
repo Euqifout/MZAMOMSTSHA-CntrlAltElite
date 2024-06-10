@@ -10,22 +10,10 @@
      height: 100vh;
      display: flex;
      flex-direction: column;
-     background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+     background: linear-gradient(rgba(255, 255, 255, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
      background-size: cover;
      background-position: center;
  }
-/*
- .bottomBox{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: white;
-    background-size: cover;
-    background-position: center;
-}*/
  .navPart{
     position: relative;
     display: flex;
@@ -39,8 +27,7 @@
      margin: 50px ; 
      margin-right: 1%;
      left: 4%;
-     top: 4%;
-     
+     top: 4%;  
  }
  .homeContent{
     width: 50%;
@@ -69,7 +56,7 @@
     font-weight: 500;
     margin-bottom: 40px;
 }
-.homeContent .btnInfo {
+.homeContent .homeBtns{
     color: #fff;
     background: #226A80;
     text-decoration: none;
@@ -79,7 +66,7 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
-.homeContent .btnInfo:hover {
+.homeContent .homeBtns:hover{
     background: white;
     color: black;
 }
@@ -98,6 +85,7 @@
     margin-top: 4%;
 
 }
+/*--The container on the right side of the main page--*/
 .title-text{
     color: #ffffff;
     font-size: 30px;
@@ -107,6 +95,7 @@
     line-height: 30px;
     margin-bottom: 15px;
 }
+/*--Container title text--*/
 .service_box{
     width: 90%;
     display: flex;
@@ -114,23 +103,24 @@
     padding: 5px;
     align-self: center;
     justify-content: space-between;
-    /*margin: auto; */
 }
+/*--Contents inside the container--*/
 .single-service{
     flex-basis: 50%;
     text-align: center;
     border-radius: 7px ;
-    /* margin-bottom: 20px; */
-    color: #fff;
+    color: #00000057;
     position: relative;
 }
-.single-service img{    /*-- The picture--*/
+/*-- The picture--.*/
+.single-service img{    
     width: 50%;
     border-radius: 7px;    
     width: 350px; 
     height: 250px;
     object-fit: cover; 
 }
+/*--The background effect of the picture(s).--*/
 .overlay{
     width: 100%;
     height: 100%;
@@ -138,13 +128,19 @@
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgba(0, 0, 0, 0.966),#226a80);
+    background: linear-gradient(rgba(0, 0, 0, 0.952),#226a80ea);
     opacity: 0;
     transition: 1s;
 }
+/*--The hover effect of the picture(s).--*/
 .single-service:hover .overlay{
     opacity: 1;
 }
+/*--To make the headdings of the service desc to be visible.--*/
+.servicedesc h3{ 
+    color: aliceblue;
+}
+/*--To text effect of the service description.--*/
 .servicedesc{
     width: 70%;
     position: absolute;
@@ -212,6 +208,20 @@ hr{
 .media-icons a:hover{
     transform: scale(1.5);
 }
+.homeFooter {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.homeFooter p {
+    margin: 0; 
+    font-size: 15px;  
+}
 
 /*-- Responsive styles --*/
 @media (max-width: 960px){
@@ -236,19 +246,25 @@ hr{
     }
 }
 /*-- About Page --*/
-
 .aboutBody{
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    text-align: center;
     margin: 0;
     padding: 0;  
-    background: linear-gradient(#226A80, #fff );
+    background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.aboutBody p{
+    color: aliceblue;
 }
 .aboutUs {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-
 }
 /*-- The Home button--*/
 .butttonHome a{
@@ -274,18 +290,18 @@ hr{
     color: #fff;
  }
 /*-- The headding--*/
-.top h1, .aboutUs h2 {
+.top h1, .aboutUs h2{
     margin: 0;
     padding: 0.5em 0;
+    color: aliceblue;
 }
 
 .top h1 {
     font-size: 2.5em;
     text-align: center;
 }
-.aboutUs h2 {
+.aboutUs h2{
     font-size: 2em;
-    color: #333;
     text-align: center;
 }
 /*-- The conyent background--*/
@@ -295,34 +311,33 @@ hr{
     max-width: 800px;
     /* background: #fff; */
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
 }
 /*-- The text--*/
 .aboutUs p {
     margin: 10px 0;
     font-size: 1.1em;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-footer {
+.aboutUsFooter {
     background: #333;
     color: #fff;
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-footer p {
-    margin: 0;
+.aboutUsFooter p {
+    margin: 0;   
 }
-
 /*-- contact Page --*/
 
 .contact-body{
     margin-top:20px;
-    background:  url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
     width: 100%;
     height: 100vh;
     display: flex;
