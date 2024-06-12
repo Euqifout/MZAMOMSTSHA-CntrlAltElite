@@ -10,7 +10,7 @@
      height: 100vh;
      display: flex;
      flex-direction: column;
-     background: linear-gradient(#226a80a2, rgba(0, 0, 0, 0.699)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/alexander-shatov-mr4JG4SYOF8-unsplash.jpg);
+     background: linear-gradient(#226a80, rgba(0, 0, 0, 0.288)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/HomebackGround.jpg);
      background-size: cover;
      background-position: center;
  }
@@ -128,7 +128,7 @@
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgba(0, 0, 0, 0.952),#226a80ea);
+    background: linear-gradient(#226a80,#ec571ce0);
     opacity: 0;
     transition: 1s;
 }
@@ -341,7 +341,7 @@ hr{
 
 .contact-body{
     margin-top:20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/alexander-shatov-mr4JG4SYOF8-unsplash.jpg);
     width: 100%;
     height: 100vh;
     display: flex;
