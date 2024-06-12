@@ -255,11 +255,9 @@ hr{
     text-align: center;
     margin: 0;
     padding: 0;  
-    background: linear-gradient(rgba(0, 0, 0, 0.699),#226a80a2) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/pexels-pixabay-268533.jpg);
+    background: linear-gradient(#226a80, rgba(0, 0, 0, 0.877)) ;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
 }
 .aboutBody p{
     color: aliceblue;
@@ -314,7 +312,10 @@ hr{
     max-width: 800px;
     /* background: #fff; */
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    /*--box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);--*/
+    background: linear-gradient(#226a80a2, rgba(0, 0, 0, 0.699)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/atul-vinayak-znXGn3heBsw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /*-- The text--*/
 .aboutUs p {
