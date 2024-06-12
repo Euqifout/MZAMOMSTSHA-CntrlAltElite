@@ -128,7 +128,7 @@
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(#226a80,#ec571ce0);
+    background: linear-gradient(#226a80ea,#ec571c);
     opacity: 0;
     transition: 1s;
 }
@@ -255,7 +255,9 @@ hr{
     text-align: center;
     margin: 0;
     padding: 0;  
-    background: linear-gradient(#226a80, rgba(0, 0, 0, 0.877)) ;
+    background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/HomebackGround_1.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
 }
