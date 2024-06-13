@@ -10,7 +10,7 @@
      height: 100vh;
      display: flex;
      flex-direction: column;
-     background: linear-gradient(#226a80, rgba(0, 0, 0, 0.288)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/HomebackGround.jpg);
+     background: linear-gradient(#226a80c4, rgba(0, 0, 0, 0.288)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/thomas-bennie-B21WLsX6a5c-unsplash.jpg);
      background-size: cover;
      background-position: center;
  }
@@ -38,7 +38,7 @@
     flex-wrap: wrap;
 }
 .homeContent .info h2{
-    color: #226A80;
+    color: #e4b61e;
     font-size: 65px;
     text-transform: uppercase;
     font-weight: 800;
@@ -128,7 +128,7 @@
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(#226a80ea,#ec571c);
+    background: linear-gradient(#226a80ee, rgba(0, 0, 0, 0.904));
     opacity: 0;
     transition: 1s;
 }
@@ -255,7 +255,7 @@ hr{
     text-align: center;
     margin: 0;
     padding: 0;  
-    background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/HomebackGround_1.jpg);
+    background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/thomas-bennie-B21WLsX6a5c-unsplash.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
