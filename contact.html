@@ -97,7 +97,7 @@
             
             let errors = [];
             let firstName = document.getElementById('firstName').value;
-            let lastName= document.getElementById('firstName').value;
+            let lastName= document.getElementById('lastName').value;
             let email = document.getElementById('email').value;
             let message = document.getElementById('message').value;
             
@@ -106,7 +106,7 @@
             }
             
             if (lastName.trim() === '') {
-                errors.push('First name is required.');
+                errors.push('Last name is required.');
             }
             if (email.trim() === '') {
                 errors.push('Email is required.');
