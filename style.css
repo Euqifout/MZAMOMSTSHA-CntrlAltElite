@@ -255,7 +255,7 @@ hr{
     text-align: center;
     margin: 0;
     padding: 0;  
-    background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/thomas-bennie-B21WLsX6a5c-unsplash.jpg);
+    background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/marek-piwnicki-AYueVudpWgo-unsplash.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -297,6 +297,7 @@ hr{
     margin: 0;
     padding: 0.5em 0;
     color: aliceblue;
+    text-transform: uppercase;
 }
 
 .top h1 {
