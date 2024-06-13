@@ -97,6 +97,7 @@
             
             let errors = [];
             let firstName = document.getElementById('firstName').value;
+            let lastName= document.getElementById('firstName').value;
             let email = document.getElementById('email').value;
             let message = document.getElementById('message').value;
             
@@ -104,6 +105,9 @@
                 errors.push('First name is required.');
             }
             
+            if (lastName.trim() === '') {
+                errors.push('First name is required.');
+            }
             if (email.trim() === '') {
                 errors.push('Email is required.');
             } else if (!/\S+@\S+\.\S+/.test(email)) {
@@ -123,40 +127,3 @@
     </script>
 </body>
 </html>
-PHP Server-Side Validation
-Create a file named contact.php to handle the server-side validation.
-
-php
-Copy code
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $errors = [];
-    $firstName = trim($_POST['firstName']);
-    $lastName = trim($_POST['lastName']);
-    $email = trim($_POST['email']);
-    $phone = trim($_POST['phone']);
-    $message = trim($_POST['message']);
-    
-    if (empty($firstName)) {
-        $errors[] = 'First name is required.';
-    }
-    
-    if (empty($email)) {
-        $errors[] = 'Email is required.';
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Invalid email format.';
-    }
-    
-    if (empty($message)) {
-        $errors[] = 'Message is required.';
-    }
-    
-    if (count($errors) > 0) {
-        foreach ($errors as $error) {
-            echo '<p class="text-danger">' . $error . '</p>';
-        }
-    } else {
-        // Process the form (e.g., send email, save to database)
-        echo '<p class="text-success">Form submitted successfully!</p>';
-    }
-}
