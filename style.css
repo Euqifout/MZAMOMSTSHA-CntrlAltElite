@@ -315,10 +315,10 @@ hr{
     max-width: 800px;
     /* background: #fff; */
     border-radius: 5px;
-    /*--box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);--*/
-    background: linear-gradient(#226a80a2, rgba(0, 0, 0, 0.699)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/atul-vinayak-znXGn3heBsw-unsplash.jpg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    /*--background: linear-gradient(#226a80a2, rgba(0, 0, 0, 0.699)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/atul-vinayak-znXGn3heBsw-unsplash.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center;--*/
 }
 /*-- The text--*/
 .aboutUs p {
