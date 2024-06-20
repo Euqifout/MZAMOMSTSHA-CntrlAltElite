@@ -100,7 +100,8 @@
             let email = document.getElementById('email').value;
             let phone = document.getElementById('phone').value;
             let message = document.getElementById('message').value;
-
+            let lastName = document.getElementById('lastName').value;
+            
             // Regular expression for phone number validation
             let phonePattern = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
 
@@ -115,7 +116,9 @@
             } else if (!/\S+@\S+\.\S+/.test(email)) {
                 errors.push('Email address is invalid.');
             }
-            
+            if (phone.trim() === '') {
+                errors.push('Phone Number is required.');
+            }
             if (phone.trim() !== '' && !phonePattern.test(phone)) {
                 errors.push('Phone number is invalid. Format: (123) 456-7890, 123-456-7890, or 123.456.7890');
             }
