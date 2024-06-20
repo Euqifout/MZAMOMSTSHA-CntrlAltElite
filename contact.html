@@ -97,15 +97,16 @@
             
             let errors = [];
             let firstName = document.getElementById('firstName').value;
-            let lastName= document.getElementById('lastName').value;
             let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
             let message = document.getElementById('message').value;
+
+            // Regular expression for phone number validation
             let phonePattern = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
-            
+
             if (firstName.trim() === '') {
                 errors.push('First name is required.');
             }
-            
             if (lastName.trim() === '') {
                 errors.push('Last name is required.');
             }
@@ -118,6 +119,7 @@
             if (phone.trim() !== '' && !phonePattern.test(phone)) {
                 errors.push('Phone number is invalid. Format: (123) 456-7890, 123-456-7890, or 123.456.7890');
             }
+            
             if (message.trim() === '') {
                 errors.push('Message is required.');
             }
@@ -130,4 +132,4 @@
         });
     </script>
 </body>
-</html>
+</html>S
