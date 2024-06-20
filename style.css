@@ -139,10 +139,15 @@
 /*--To make the headdings of the service desc to be visible.--*/
 .servicedesc h3{ 
     color: rgba(0, 4, 7, 0.726);
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
 }
 /*--To text effect of the service description.--*/
 .servicedesc{
-    width: 70%;
+    width: 80%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -157,18 +162,29 @@
     -ms-transition: 1s;
     -o-transition: 1s;
 }
-hr{
+hr{ /*--The white underline of the service description.--*/
     background: #fff;
     height: 2px;
     border: 0;
     margin: 10px auto;
-    width: 50%;
+    width: 20%;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
 }
 .servicedesc p{
     font-size: 17px;
 }
+.single-service:hover .servicedesc hr{ 
+    /*--The white underline effect--*/
+    width: 55%;
+}
 .single-service:hover .servicedesc h3{ 
     color: rgba(247, 249, 250, 0.726);
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .single-service:hover .servicedesc{
     bottom: 20%;
@@ -232,13 +248,8 @@ hr{
     .navPart .logo{
         position: relative;
         width: 150px;
-        top: 4%;
-        left: 4%;
     }
-    .homeContent .logo{
-        position: absolute;
-        bottom: -6px;
-    }
+
     .homeContent .info h2{
         font-size: 45px;
         line-height: 50px;
@@ -366,7 +377,7 @@ hr{
 @media (min-width: 1024px) {
     .contact-info__wrapper {
         border-radius: 0 .625rem .625rem 0;
-        padding: 5rem !important
+        padding: 5rem !important 
     }
 }
 .contact-info__list span.position-absolute {
