@@ -9,6 +9,7 @@
      width: 100%;
      height: 100vh;
      display: flex;
+     align-items: center;
      flex-direction: column;
      background: linear-gradient(#226a80c4, rgba(0, 0, 0, 0.288)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/thomas-bennie-B21WLsX6a5c-unsplash.jpg);
      background-size: cover;
@@ -17,6 +18,8 @@
  .navPart{
     position: relative;
     display: flex;
+    max-width: 1500px;
+    min-height: 50vh;
     justify-content: space-around ;
     align-items: flex-start;
      
@@ -76,12 +79,36 @@
     text-align: left;   
 }
 .rightContent {
+    position: relative;
     align-self: center;
     text-align: center;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 4%;
+    margin-top: 8%;
+    margin-left: 3%;
+}
+.rightContent .slide-Btn-mp{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #e4b61e;
+    background: #226A80;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.rightContent .slide-Btn-mp:hover{
+    background: #245b6bd5;
+    color: #f1bd0f;
+}
+.rightContent .slide-Btn-mp#prev-slide-mp{
+    left: -10px;
+}
+.rightContent .slide-Btn-mp#next-slide-mp{
+    right: -20px;
 }
 
 /*--The container on the right side of the main page--*/
@@ -127,7 +154,7 @@
     position: absolute;
     height: 100%;
     width: 50%;
-    background: #000;
+    background: #e4b61e;
     border-radius: inherit;
     cursor: grab;
 }
