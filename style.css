@@ -105,10 +105,10 @@
     color: #f1bd0f;
 }
 .rightContent .slide-Btn-mp#prev-slide-mp{
-    left: -10px;
+    left: -5px;
 }
 .rightContent .slide-Btn-mp#next-slide-mp{
-    right: -20px;
+    right: -50px;
 }
 
 /*--The container on the right side of the main page--*/
@@ -279,6 +279,7 @@ hr{ /*--The white underline of the service description.--*/
     .single-service:hover .servicedesc{
         bottom: 25% !important;
     }
+    
 }
  .media-icons{
     display: flex;
