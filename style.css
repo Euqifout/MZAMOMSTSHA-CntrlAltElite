@@ -402,6 +402,16 @@ hr{ /*--The white underline of the service description.--*/
 .aboutUsFooter p {
     margin: 0;   
 }
+.dineo{
+    position: absolute;
+    left: 80%;
+    bottom: 30%; 
+}
+.ora{
+    position: absolute;
+    right: 80%;
+    bottom: 30%; 
+}
 /*-- contact Page --*/
 
 .contact-body{
