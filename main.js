@@ -14,3 +14,13 @@ const initSlider = () => {
 }
 
 window.addEventListener("load", initSlider);
+/* this is the navigation part */
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+/** this is for the side bar to close */
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
