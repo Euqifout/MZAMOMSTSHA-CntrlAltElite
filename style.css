@@ -6,8 +6,7 @@
     padding: 0;
  }
  /* it ensures that our content occuries the entire screen*/
- 
-.topBox{
+ .topBox{
      min-height: 100vh;
      position: relative;
      width: 100%;
@@ -36,7 +35,7 @@ nav ul{
     font-size: 23px;
     font-weight: bold;
 }
-nva li{
+nav li{
     height: 50px; 
 }
 nav a {
@@ -85,23 +84,25 @@ nav li:first-child {
 .sidebar a{
     width: 100%;
 }
-/* .navPart{
-    position: relative;
-    display: flex;
-    max-width: 1500px;
-    min-height: 50vh;
-    justify-content: space-around ;
-    align-items: flex-end;
-     
- }
- .navPart .logo{
-     position: relative;
-     width: 200px;
-     margin: 50px ; 
-     margin-right: 1%;
-     left: 4%;
-     top: 4%;  
- } */
+.menu-button{
+display: none;
+}
+@media (max-width: 800px){
+    /* this here tells us the sceen with less then 800pixel wont be dispalyed*/
+    .hideOnMoblie{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+/* we making another @media so that the sidebar will be an entire width in smart fones*/
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/* the nagivation ends here*/
 
  .info{
     font-display: flex;
@@ -378,7 +379,8 @@ hr{ /*--The white underline of the service description.--*/
     }
     
 }
- .media-icons{
+/* the facebook thing*/
+/* /* .media-icons{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -395,22 +397,14 @@ hr{ /*--The white underline of the service description.--*/
     margin-right: 60px;
 }
 .media-icons a:hover{
-    transform: scale(1.5);
-}
-.homeFooter {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    transform: scale(1.5); 
+ }   
+    */
 
-.homeFooter p {
+/* .homeFooter p {
     margin: 0; 
     font-size: 15px;  
-}
+} */
 
 /*-- Responsive styles --*/
 @media (max-width: 960px){
@@ -508,7 +502,7 @@ hr{ /*--The white underline of the service description.--*/
     color: rgb(255, 255, 255);
 }
 
-.aboutUsFooter {
+/* .aboutUsFooter {
     background: #333;
     color: #fff;
     padding: 10px 0;
@@ -516,11 +510,7 @@ hr{ /*--The white underline of the service description.--*/
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.aboutUsFooter p {
-    margin: 0;   
-}
+} */
 .dineo{
     position: absolute;
     left: 80%;
@@ -584,4 +574,104 @@ hr{ /*--The white underline of the service description.--*/
 }
 .shadow-lg, .shadow-lg--on-hover:hover {
     box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+/* every thing that has to do with the footer is here*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+.homeFooter{
+    background-color: #226A80;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+/* we are now styling the content befre the actual content of the selected element that is h4*/
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #f1de33;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	/* text-decoration: none; */
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.text-center_p-3{
+    position: relative;
+    justify-content: center;
+    text-align: center;
 }
