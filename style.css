@@ -68,10 +68,10 @@ nav li:first-child {
     right: 0;
     height: 100vh;
     width: 200px;
-    z-index: 999;
     background-color: #22868d3f;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -85,7 +85,7 @@ nav li:first-child {
     width: 100%;
 }
 .menu-button{
-display: none;
+    display: none;
 }
 @media (max-width: 800px){
     /* this here tells us the sceen with less then 800pixel wont be dispalyed*/
@@ -115,19 +115,7 @@ display: none;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
-/*
-li{
-    list-style: none;
-    display: inline-block;
-}
-li a{
-    display: block;
-    padding: 10px 20px;
-    color: aliceblue;
-    font-size: 23px;
-    font-weight: bold;
-    margin-right: 25px;
-}*/
+
  .homeContent{
     width: 50%;
     max-width: 500px;
@@ -169,12 +157,6 @@ li a{
     background: white;
     color: black;
 }
-/* 
-.info{
-    flex-basis: 45%;
-    margin-bottom: 20px;
-    text-align: left;   
-} */
 
 .rightContent {
     position: relative;
@@ -379,32 +361,7 @@ hr{ /*--The white underline of the service description.--*/
     }
     
 }
-/* the facebook thing*/
-/* /* .media-icons{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
-}
-.media-icons a{
-    position: relative;
-    color: #ffffff;
-    font-size: 25px;
-    transition: 0.3s;
-    transition-property: transform;
-}
-.media-icons a:not(:last-child){
-    margin-right: 60px;
-}
-.media-icons a:hover{
-    transform: scale(1.5); 
- }   
-    */
 
-/* .homeFooter p {
-    margin: 0; 
-    font-size: 15px;  
-} */
 
 /*-- Responsive styles --*/
 @media (max-width: 960px){

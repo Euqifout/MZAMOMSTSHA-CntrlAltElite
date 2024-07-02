@@ -11,19 +11,21 @@
 <body class="contact-body">
     <nav>
         <ul class="sidebar">
-          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
           <li><a href="main.html">Home</a></li>
           <li><a href="aboutUs.html">About Us</a></li>
           <li><a href="contact.html">Contacts</a></li>
         </ul>
         <!-- <img src="../MZAMOMSTSHA-CntrlAltElite/picFolder/logo2.png" class="logo01"> -->
-        <ul > 
+        <ul >        
           <li><a href="#">Mzamomstha</a></li>
-          <li><a href="main.html">Home</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="contact.html">Contacts</a></li>
-          <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>      
+          <li class="hideOnMoblie"><a href="main.html">Home</a></li>
+          <li class="hideOnMoblie"><a href="aboutUs.html">About Us</a></li>
+          <li class="hideOnMoblie"><a href="contact.html">Contacts</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+  
+        
       </nav>
     <h1 style="color: #fff; margin-top: 15px; margin-bottom: 15px; text-align: center;">KEEP IN TOUCH WITH US</h1>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
@@ -95,7 +97,6 @@
                             </div>
                             <div class="col-sm-12 mb-3">
                                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                                <a>Click </a><a href="main.html">here</a><a> to go home</a>
                             </div>
                         </div>
                     </form>
@@ -151,5 +152,53 @@
             }
         });
     </script>
+    <!--The Bottom of the page -->
+    <footer class="homeFooter">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Mzamomstha Primary school</h4>
+              <ul>
+                <li><a href="#"></a>About Us</li>
+                <li><a href="#"></a>Contacts</li>
+                <li><a href="#"></a>Events</li>
+                <li><a href="#"></a>The services</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#"></a>FAQ</li>
+                <li><a href="#"></a>Contact US</li>
+                <li><a href="#"></a>Dont know nam</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>about the school</h4>
+              <ul>
+                <li><a href="#"></a>Matrics</li>
+                <li><a href="#"></a>Updates</li>
+                <li><a href="#"></a>Grades</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Copyright -->
+  <div class="text-center_p-3" style="background-color: rgba(240, 240, 240, 0.2)">
+    © 2020 Copyright: made with love by Ctrl Alt Elite
+  </div>
+  <!-- Copyright -->
+        
+            
+      </footer>
 </body>
 </html>S
