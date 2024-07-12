@@ -22,105 +22,134 @@
         <li><a href="main.html">Home</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
         <li><a href="contact.html">Contacts</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="Events">Events</a></li>
       </ul>
       <!-- <img src="../MZAMOMSTSHA-CntrlAltElite/picFolder/logo2.png" class="logo01"> -->
-      <ul >        
-        <li><a href="#">Mzamomstha</a></li>
-        <li class="hideOnMoblie"><a href="main.html">Home</a></li>
+      <ul >
+        <div class="LogoText">    
+          <li><a href="main.html"><h1>MZAMOMSTSHA<span>.com</span></h1></a></li>
+        </div>               
         <li class="hideOnMoblie"><a href="aboutUs.html">About Us</a></li>
         <li class="hideOnMoblie"><a href="contact.html">Contacts</a></li>
+        <li class="hideOnMoblie"><a href="#">Events</a></li>
         <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-      </ul>
-
-      
+      </ul>   
     </nav>
-        <!--Mzamotsha Primary School Home Page-->
-        <section class="topBox">
-          <div class="navPart">         
-            <div class="homeContent">   
-              <!--The logo and contents on the left-->
-              <!-- <img src="../MZAMOMSTSHA-CntrlAltElite/picFolder/logo2.png" class="logo">    -->
-                <div class="info">
-                    
-                </div>  
-            </div>    
-            <!--The contents on the right side of page-->
-            <div class="rightContent"> <!--container--> 
-              <div class="title-text">           
-                  <h1>OUR SCHOOL</h1>
+          
+        <section>
+             <!-- ------------About------------- -->
+    <div class="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="picFolder/logo2.png">
               </div>
-              
-                <!--The container on the right side of page-->            
-              <div class="service_box">   
+              <div class="about-col-2">
+                  <h1 class="sub-title">Notices</h1>
+                  <p>                   
+                        2024/2025 SRC Elections <br>
+                        July 2024 Senior Students Registration <br>
+                        11th International Adventure Conference
+
+                      <div class="tab-titles">
+                          <p class="tab-links active-link" onclick="opentab('skills')">Study</p>
+                          <p class="tab-links" onclick="opentab('Experience')">Examinations</p>
+                          <p class="tab-links" onclick="opentab('Education')">News</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                          <ul>
+                              <li> <span>I WANT TO STUDY</span> <br> Application info on how to proceed</li>
+                              <li> <span>I AM A STUDENT</span> <br> Registration info on how to proceed</li>
+                          </ul>
+                      </div>
+                      <div class="tab-contents" id="Experience">
+                          <ul>
+                              <li> <span>JUNIOR</span> <br> Exam dates</li>
+                              <li> <span>SENIOR</span> <br> Exam dates</li>
+                          </ul>
+                      </div>
+                      <div class="tab-contents" id="Education">
+                          <ul>
+                              <li> <span>SCHOOL HOLIDAYS</span> <br> Term 3 Holidays 23 Sep 2024 (Mon) 30 Sep 2024 (Mon)</li>
+                              <li> <span>MAIN EVENTS</span> <br> Sports Day 27 Sep 2024 (Fri)<br> Sports Tournament 28 Sep 2024 (Sat)</li>
+                          </ul>
+                      </div>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- ------------ Services------------ -->
+
+  <div id="services">
+      <div class="container">
+          <h1 class="sub-title">Our Services</h1>
+          <div class="service-list">
+              <div>
+                  <i class="fa-solid fa-code"></i>
+                  <h2>Web Design</h2>
+                  <p>I design and develop the web</p>
+                  <a href="#">learn more</a>
+              </div>
+              <div>
+                  <i class="fa-solid fa-crop"></i>
+                  <h2>UI/ Design</h2>
+                  <p>I design and develop the web</p>
+                  <a href="#">learn more</a>
+              </div>
+              <div>
+                  <i class="fa-brands fa-app-store"></i>
+                  <h2>App Design</h2>
+                  <p>I design and develop Android Apps</p>
+                  <a href="#">learn more</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ------------ Portfolio ------------ -->
+  <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">Top achievers</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="picFolder/Top-stud-1.jpg">
+                  <div class="layer">
+                      <h3>Grade 5</h3>
+                      <p>4 Distinctions <br>
+                        Number 1 in math and science
+                      </p>
+                      <a href=""><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="picFolder/Top-stud-2.jpg">
+                  <div class="layer">
+                      <h3>Grade 6</h3>
+                      <p>5 Distinctions <br>
+                         Number 1 in math and science
+                      </p>
+                      <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
                       
-                <!--The top left contents of the container-->         
-                    <div class="single-service">
-                      <img src="picFolder/img-1.jpg" alt="img-1" class="image-Item">
-                        <!--The foreground animation--> 
-                        <div class="overlay"> </div>
-                        <!--The text on the pictire-->
-                        <div class="servicedesc">
-                          <h3>SPORTS CURRICULUM</h3>
-                          <hr>
-                            <p>At mzamomsta, we offer a wide variety of sporting opportunities for both team sports and individual sports appropriate for each developmental phase throughout the year. 
-                              We value the role that sports plays in the development of our learners.</p>
-                        </div>
-                    </div>
-                <!--The top right contents of the container-->
-                    <div class="single-service">
-                      <img src="picFolder/img-2.jpg" alt="img-2" class="image-Item">
-                        <!--The foreground animation--> 
-                        <div class="overlay"> </div>
-                          <!--The text on the pictire-->
-                          <div class="servicedesc">
-                          <h3>NEED MORE TEACHERS</h3>
-                          <hr>
-                            <p>Join our dynamic team! We’re seeking a passionate  teacher for our primary school and high school. 
-                              Must have a bachelor’s degree in teaching or education, teaching certification, and experience working 
-                              with diverse student populations. Competitive salary and professional development opportunities</p>
-                          </div>
-                    </div> 
-                <!--The bottom left contents of the container-->   
-                    <div class="single-service">
-                      <img src="picFolder/img-3.jpg" alt="img-3" class="image-Item">
-                        <div class="overlay"> </div>
-                        <!--The foreground animation--> 
-                        <div class="servicedesc">
-                          <!--The text on the pictire-->
-                          <h3>ONLINE STUDIES</h3>
-                          <hr>
-                            <p>Mzamonsta allows you to enjoy a more flexible schedule, and can allow you to more easily
-                              develop your studies alongside furthering your education. This will also help the learners
-                              build their confidence and deepen their understanding of the subjects materials.</p>
-                        </div>
-                    </div>
-                <!--The bottom right contents of the container--> 
-                    <div class="single-service">
-                      <img src="picFolder/img-4.jpg" alt="img-4" class="image-Item">
-                        <!--The foreground animation--> 
-                        <div class="overlay"> </div>
-                        <!--The text on the pictire--> 
-                        <div class="servicedesc">
-                          <h3>TALENT DISCOVERY</h3>
-                          <hr>
-                            <p>The school also help learners discover their talent, whether in sports
-                              Arts and also music. They have different programmes that help learners discover
-                              their skills and talents so that they can have greater chances of success.</p>
-                        </div>
-                    </div>                 
-                  <link rel="stylesheet" charset="utf-8">
-              </div><!--The End of the container--> 
-              <button id="prev-slide-mp" class="slide-Btn-mp material-symbols-outlined">arrow_circle_right</button>
-              <button id="next-slide-mp" class="slide-Btn-mp material-symbols-outlined">arrow_circle_left</button>  
-              <div class="main-slider-scrollbar">
-                <div class="main-scrollbar-track">
-                  <div class="main-scrollbar-thumb"></div>                  
-                </div>
-              </div> 
-            </div><!--The end of the contents on the right side of page-->
-                          
-          </div>                             
-        </section>    
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="picFolder/Top-stud-3.jpg">
+                  <div class="layer">
+                      <h3>Grade 7</h3>
+                      <p>7 Distinctions <br>
+                        Number 1 in math and science
+                      </p>
+                      <a href=""><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="contact.html" class="btn">Contact us</a>
+      </div>
+  </div>
+        </section>
+
         <!--The Bottom of the page -->
         <footer class="homeFooter">
           <div class="container">
@@ -169,5 +198,21 @@
           
               
         </footer>
+
+        <script>
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabContents = document.getElementsByClassName("tab-contents");
+          function opentab(tabname){
+              for(tablink of tablinks){
+                  tablink.classList.remove("active-link")
+              }
+              for(tabContent of tabContents){
+                  tabContent.classList.remove("active-tab")
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+          }
+      </script>
+
     </body>
 </html>
