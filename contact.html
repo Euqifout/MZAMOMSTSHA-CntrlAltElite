@@ -151,9 +151,12 @@
             if (errors.length > 0) {
                 document.getElementById('errorMessages').innerHTML = errors.join('<br>');
             } else {
-                document.getElementById('contactForm').submit();
+               document.getElementById('contactForm').submit();
+                 document.getElementById("contactForm").reset();
+                    alert("Form submitted and cleared!");
             }
-        });
+
+        
     </script>
     <!--The Bottom of the page -->
     <footer class="homeFooter">
