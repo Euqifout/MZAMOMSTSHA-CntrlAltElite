@@ -2,6 +2,17 @@
 /*-- Home Page --*/
 /* -- removing the default padding and margins*/
 
+
+.homepage{
+    background-color: #4292aa;
+}
+
+.screen{
+    height: 75vh;
+    overflow: hidden;
+
+}
+
 nav{
     background-color:#22868da2;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
@@ -137,9 +148,9 @@ body {
 
 /* ----------- About section--------- */
 
-#about{
+.aboutBody{
     padding: 80px 0;
-    color: #3dcfe9;
+    background-color: #3dcfe9;
 }
 .row{
     display: flex;

@@ -1,15 +1,137 @@
 /*-- About Page --*/
+/* the navigation*/
+body{
+    background-color: #4292aa;
+}
+
+nav{
+    background-color:#22868da2;
+    box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: bold;
+}
+nav li{
+    height: 50px; 
+}
+nav a {
+    height: 100%;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#fceded;
+}
+nav a:hover{
+    background-color: #386c7c9c;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.LogoText h1{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+.LogoText h1 span{
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 40px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a::after {
+    content: '';
+    width: 20%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+    background: #ff004f;
+    
+}
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #22868d3f;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media (max-width: 800px){
+    /* this here tells us the sceen with less then 800pixel wont be dispalyed*/
+    .hideOnMoblie{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+/* we making another @media so that the sidebar will be an entire width in smart fones*/
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/*it ends here*/
 .aboutBody{
     font-family: Arial, sans-serif;
     line-height: 1.6;
     text-align: center;
     margin: 0;
     padding: 0;  
-    background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/marek-piwnicki-AYueVudpWgo-unsplash.jpg);
+    background-color: #226A80;
+    /* background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/marek-piwnicki-AYueVudpWgo-unsplash.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100vh; */
 }
 .aboutBody p{
     color: aliceblue;
