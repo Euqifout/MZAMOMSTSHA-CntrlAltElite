@@ -25,7 +25,7 @@ Our website consists of the following pages:
 - **Contact Form: For any questions or feedback, please fill out the contact form on the Contact Page, and we will get back to you as soon as possible.**
   
 # Technical Information 
-- **Website Framework: [Specify the framework or CMS used, if any]**
+- **Website Framework: Bootstrap**
 - **Browser Compatibility: The website is best viewed on modern web browsers such as Google Chrome, Mozilla Firefox, and Microsoft Edge**
 
 # Contribution
