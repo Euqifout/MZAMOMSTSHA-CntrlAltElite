@@ -12,7 +12,13 @@
     overflow: hidden;
 
 }
-
+.navdisplay{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-direction: row;
+    flex-basis: auto;
+     
+}
 nav{
     background-color:#22868da2;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
@@ -114,7 +120,7 @@ nav li:first-child {
     display: none;
 }
 @media (max-width: 800px){
-    /* this here tells us the sceen with less then 800pixel wont be dispalyed*/
+    /* this here tells us the sceen with less then 800pixel wont be dispalyed */
     .hideOnMoblie{
         display: none;
     }
@@ -123,12 +129,17 @@ nav li:first-child {
     }
 }
 /* we making another @media so that the sidebar will be an entire width in smart fones*/
-@media(max-width: 400px){
+ @media(max-width: 400px){
     .sidebar{
         width: 100%;
     }
+} 
+
+/* the postion of the logo */
+.mza-logo{
+    position: relative;
 }
-/* the nagivation ends here*/
+/* the nagivation ends here
 
 * {
     margin: 0;
@@ -600,6 +611,7 @@ body{
 .row{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row !important;
 }
 ul {
     list-style: none;
@@ -609,7 +621,7 @@ ul {
     padding: 70px 0;
 }
 .footer-col{
-    width: 25%;
+    width: 25% !important;
     padding: 0 15px;
 }
 .footer-col h4{
