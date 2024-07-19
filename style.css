@@ -20,7 +20,7 @@
 }
 
 nav{
-    background-color:#ffffffa2;
+    background-color:#064d52cc;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
 }
 nav ul{
@@ -36,6 +36,7 @@ nav ul{
 nav li{
     height: 50px; 
 }
+
 nav a {
     height: 100%;
     padding: 20px 30px;
@@ -55,7 +56,11 @@ nav {
     padding-right: 15px;
     padding-left: 15px;
 }
+.nav-text {
+    margin-top: 20px;
+}
 .nav-text h1{
+
     color: #000;
     text-decoration: none;
     font-size: 30px;
@@ -95,13 +100,7 @@ nav ul li a:hover::after {
 nav li:first-child {
     margin-right: auto;
 }
-.logo{
-    width: 250px;
-    border-radius: 15px;
-    margin: 0;
-    position: absolute;
-    
-}
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -145,7 +144,7 @@ nav li:first-child {
 
 /* the postion of the logo */
 .logo{
-    width: 250px;
+    width: 100px;
     position: relative;
     top: 10%;
     left: 5%;
