@@ -16,8 +16,7 @@
     display: flex !important;
     justify-content: space-evenly !important;
     flex-direction: row;
-    flex-basis: auto;
-     
+    flex-basis: auto;  
 }
 
 nav{
@@ -52,14 +51,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.LogoText h1{
+.nav-text h1{
     color: #000;
     text-decoration: none;
     font-size: 30px;
 }
-.LogoText h1 span{
+.nav-text h1 span{
     color: #4292aa;
     text-decoration: none;
     font-size: 30px;
@@ -96,9 +97,10 @@ nav li:first-child {
 }
 .logo{
     width: 250px;
+    border-radius: 15px;
+    margin: 0;
     position: absolute;
-    top: 4%;
-    left: 4%;
+    
 }
 .sidebar{
     position: fixed;
@@ -142,8 +144,11 @@ nav li:first-child {
 } 
 
 /* the postion of the logo */
-.mza-logo{
+.logo{
+    width: 250px;
     position: relative;
+    top: 10%;
+    left: 5%;
 }
 /* the nagivation ends here
 
@@ -165,7 +170,7 @@ body {
 
 /* ----------- About section--------- */
 
-.aboutBody{
+.about{
     padding: 80px 0;
     background-color: #3dcfe9;
 }
@@ -180,7 +185,7 @@ body {
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .about-col-2 {
     flex-basis: 60%;
@@ -189,8 +194,8 @@ body {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #5aabb6;
-    margin-top: 10%;
+    color: #ffffff;
+    margin-top: 5%;
 }
 .tab-titles {
     display: flex;
@@ -207,7 +212,7 @@ body {
     content: '';
     width: 0;
     height: 3px;
-    background: #30829bc4;
+    background: #ffffff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -221,8 +226,8 @@ body {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #30829bc4;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 16px;
 }
 .tab-contents{
     display: none;
@@ -243,7 +248,7 @@ body {
     margin-top: 50px;
 }
 .service-list div{
-    background:#01181fc4;;
+    background:#3dcfe9;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -261,16 +266,16 @@ body {
 }
 .service-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #30829bc4
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .service-list div:hover{
-    background: #01181fc4;
+    background: #ffffff;
     transform: translateY(-10px);
 }
-/* ----------- Portfolio section--------- */
+/* ----------- About section--------- */
 .portfolio{
     padding: 50px 0;
 }
