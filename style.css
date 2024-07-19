@@ -19,8 +19,9 @@
     flex-basis: auto;
      
 }
+
 nav{
-    background-color:#22868da2;
+    background-color:#ffffffa2;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
 }
 nav ul{
@@ -54,14 +55,14 @@ nav {
     flex-wrap: wrap;
 }
 .LogoText h1{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 30px;
 }
 .LogoText h1 span{
-    color: #ff004f;
+    color: #4292aa;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
 }
 nav ul li {
     display: inline-block;
@@ -87,13 +88,18 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
     width: 100%;
-    background: #ff004f;
+    background: #4292aa;
     
 }
 nav li:first-child {
     margin-right: auto;
 }
-
+.logo{
+    width: 250px;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
 .sidebar{
     position: fixed;
     top: 0;
