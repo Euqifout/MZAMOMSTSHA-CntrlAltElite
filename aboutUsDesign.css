@@ -40,12 +40,12 @@ nav {
 .nav-text h1{
     color: #ffffff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav-text h1 span{
     color: #DFD0B8;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 nav ul li {
     display: inline-block;
@@ -71,8 +71,7 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
     width: 100%;
-    background: #DFD0B8;
-    
+    background: #DFD0B8;   
 }
 nav li:first-child {
     margin-right: auto;
@@ -81,7 +80,7 @@ nav li:first-child {
 .logo{
     width: 150px;
     position: relative;
-    padding-right: 50px;
+    padding-left: 50px;
 }
 .sidebar{
     position: fixed;
@@ -124,7 +123,7 @@ nav li:first-child {
     }
 }
 /*it ends here*/
-.aboutBody{
+.aboutNav{
     font-family: Arial, sans-serif;
     line-height: 1.6;
     text-align: center;
@@ -137,42 +136,18 @@ nav li:first-child {
     width: 100%;
     height: 100vh; */
 }
-.aboutBody p{
-    color: aliceblue;
-}
+
 .aboutUs {
-    color: #fff;
+    color: rgb(223, 208, 184);
     padding: 10px 0;
     text-align: center;
 }
-/*-- The Home button--*/
-.butttonHome a{
-    color: #DFD0B8;
-    background: #153448;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 2px 15px;
-    border-radius: 20px;
- }
- .butttonHome{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 100px ;
- }
- .butttonHome a:not(:last-child){
-     margin-right: 30px;
- }
- .butttonHome a:hover{
-    background: #226A80;
-    color: #fff;
- }
+
 /*-- The headding--*/
 .top h1, .aboutUs h2{
     margin: 0;
     padding: 0.5em 0;
-    color: aliceblue;
+    color: rgb(223, 208, 184);
     text-transform: uppercase;
 }
 
@@ -183,35 +158,26 @@ nav li:first-child {
 .aboutUs h2{
     font-size: 2em;
     text-align: center;
+    
 }
 /*-- The conyent background--*/
 .aboutUs {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    /* background: #fff; */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
-    /*--background: linear-gradient(#226a80a2, rgba(0, 0, 0, 0.699)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/atul-vinayak-znXGn3heBsw-unsplash.jpg);
-    background-size: cover;
-    background-position: center;--*/
+    background: rgb(21, 52, 72);
+   
 }
 /*-- The text--*/
 .aboutUs p {
     margin: 10px 0;
-    font-size: 1.1em;
-    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    color: rgb(148, 137, 121);
 }
 
-/* .aboutUsFooter {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-} */
+
 
 /* every thing that has to do with the footer is here*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -312,10 +278,13 @@ ul {
     position: relative;
     justify-content: center;
     text-align: center;
+    color: #DFD0B8;
 }
 
-.Top-aachievers-section{
-    padding: 50px 0;
+.sub-title {
+    color: rgb(223, 208, 184);
+    font-family: "Sevillana", cursive;
+    font-size: 35px;
 }
 .work-list{
     display: grid;
@@ -329,11 +298,12 @@ ul {
     position: relative;
     overflow: hidden;
 }
+
 .work p{
-    color: #ffffff;
+    color: rgb(21, 52, 72);
 }
 .work h3{
-    color: #ffffff;
+    color: rgb(21, 52, 72);
 }
 .work img{
     width: 100%;
@@ -344,7 +314,7 @@ ul {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient( rgba(21, 52, 72, 0.849), rgba(148, 137, 121, 0.822));
+    background: linear-gradient( rgb(223, 208, 184), rgba(148, 137, 121, 0.822));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -389,9 +359,10 @@ ul {
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #948979;
+    color: rgb(223, 208, 184);
     transition: background 1s;
 }
 .btn:hover {
-    background: #30829bc4;
+    background: rgb(223, 208, 184);
+    color: rgb(21, 52, 72);
 }

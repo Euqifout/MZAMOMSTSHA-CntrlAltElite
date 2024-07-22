@@ -84,12 +84,12 @@ nav {
 .nav-text h1{
     color: #000;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav-text h1 span{
     color: #4292aa;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 nav ul li {
     display: inline-block;
