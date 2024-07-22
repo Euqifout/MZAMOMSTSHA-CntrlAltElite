@@ -1,7 +1,7 @@
 
 /*-- Home Page --*/
 /* -- removing the default padding and margins*/
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .homepage{
     background-color: #3C5B6F;
@@ -22,6 +22,11 @@
 nav{
     background-color:#153448;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
+}
+nav h1{
+    color:  #DFD0B8;
+    text-decoration: none;
+    font-size: 25px;
 }
 nav ul{
     width: 100%;
@@ -361,20 +366,6 @@ nav li:first-child {
 .work:hover .layer{
     height: 100%;
 }
-.btn{
-    display: flex;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #153448;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #948979;
-    transition: background 1s;
-}
-.btn:hover {
-    background: #30829bc4;
-}
 .main-slider-scrollbar .main-scrollbar-track{
     height: 2px;
     width: 100%;
@@ -507,15 +498,13 @@ nav li:first-child {
     box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
 }
 /* every thing that has to do with the footer is here*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
 *{
-    margin: 0;
     padding:0;
-    box-sizing: border-box;
 }
 .container{
     margin: auto;
