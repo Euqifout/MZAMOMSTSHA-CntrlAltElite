@@ -8,7 +8,7 @@
 }
 
 .screen{
-    height: 75vh;
+    height: 70vh;
     overflow: hidden;
 
 }
@@ -280,6 +280,12 @@ nav li:first-child {
     position: relative;
     overflow: hidden;
 }
+.work p{
+    color: #ffffff;
+}
+.work h3{
+    color: #ffffff;
+}
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -289,7 +295,7 @@ nav li:first-child {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #30829bc4);
+    background: linear-gradient( rgba(148, 137, 121, 0.726), rgba(21, 52, 72, 0.925));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -310,11 +316,11 @@ nav li:first-child {
 }
 .layer a{
     margin-top: 20px;
-    color: #f1bd0f;
+    color: #DFD0B8;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #153448;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -330,11 +336,11 @@ nav li:first-child {
     display: flex;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #30829bc4;
+    border: 1px solid #153448;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #948979;
     transition: background 1s;
 }
 .btn:hover {
@@ -493,9 +499,10 @@ body{
 }
 ul {
     list-style: none;
+    color: #ffffff;
 }
 .homeFooter{
-    background-color: #226A80;
+    background-color: #153448;
     padding: 70px 0;
 }
 .footer-col{
@@ -504,7 +511,7 @@ ul {
 }
 .footer-col h4{
     font-size: 18px;
-    color: #ffffff;
+    color: #DFD0B8;
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 500;
@@ -516,7 +523,7 @@ ul {
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #f1de33;
+	background-color: #948979;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -527,15 +534,14 @@ ul {
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #948979;
 	/* text-decoration: none; */
 	font-weight: 300;
-	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #948979;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -551,8 +557,8 @@ ul {
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+	color: #153448;
+	background-color: #DFD0B8;
 }
 
 /*responsive*/
@@ -571,4 +577,5 @@ ul {
     position: relative;
     justify-content: center;
     text-align: center;
+    color: #DFD0B8;
 }
