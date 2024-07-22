@@ -166,7 +166,7 @@ nav li:first-child {
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .about-col-2 {
     flex-basis: 60%;
@@ -183,6 +183,11 @@ nav li:first-child {
     display: flex;
     margin: 20px 0 40px;
     color: #948979;
+
+}
+.tab-titles p {
+    font-size: 25px;
+    font-weight: 300;
 }
 .tab-links {
     margin-right: 50px;
@@ -210,7 +215,7 @@ nav li:first-child {
 }
 .tab-contents ul li span{
     color: #948979;
-    font-size: 16px;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
@@ -223,7 +228,6 @@ nav li:first-child {
 
 #services{
     padding: 30px 0;
-    height: 60vh;
 }
 .service-list{
     display: grid;
@@ -232,7 +236,8 @@ nav li:first-child {
     margin-top: 50px;
 }
 .service-list div{
-    background:#3C5B6F;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -242,18 +247,22 @@ nav li:first-child {
 }
 .service-list div i{
     font-size: 50px;
-    color: #DFD0B8 ;
+    color: #ffffff;
     margin-bottom: 30px;
+    transition: all 0.5s ease;
 }
+
 .service-list div p{
     font-size: 20px;
     color: #DFD0B8 ;
+    transition: all 0.5s ease;
 }
 .service-list div h2{
     font-size: 30px;
-    color: #DFD0B8 ;
+    color: #ffffff ;
     font-weight: 500;
     margin-bottom: 15px;
+    transition: all 0.5s ease;
 }
 .service-list div a{
     text-decoration: none;
@@ -261,24 +270,42 @@ nav li:first-child {
     font-size: 15px;
     margin-top: 20px;
     display: inline-block;
+    transition: all 0.5s ease;
 }
 
 .service-list div:hover{
     background: #153448;
-    transform: translateY(-10px);    
+    transform: translateY(-10px); 
+    i {
+        color: #DFD0B8 ;
+    }
+    h2 {
+        color: #DFD0B8 ;
+        letter-spacing: 1px;
+    }
+    p {
+        color: #ffffff;
+    }
+    a {
+        color: #ffffff;
+        font-size: 16px;
+    }       
 }
 /* ----------- About section--------- */
-.portfolio{
+.Top-aachievers-section{
     padding: 50px 0;
 }
 .work-list{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 .work{
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 85%;
+    height: 85%;
     position: relative;
     overflow: hidden;
 }

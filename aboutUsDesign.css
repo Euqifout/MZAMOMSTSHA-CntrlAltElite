@@ -1,11 +1,11 @@
 /*-- About Page --*/
 /* the navigation*/
 body{
-    background-color: #4292aa;
+    background-color: #3C5B6F;
 }
 
 nav{
-    background-color:#064d52cc;
+    background-color:#153448;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
 }
 nav ul{
@@ -26,8 +26,7 @@ nav a {
     padding: 20px 30px;
     text-decoration: none;
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 nav a:hover{
     background-color: #386c7c00;
@@ -39,12 +38,12 @@ nav {
     flex-wrap: wrap;
 }
 .nav-text h1{
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 30px;
 }
 .nav-text h1 span{
-    color: #4292aa;
+    color: #DFD0B8;
     text-decoration: none;
     font-size: 30px;
 }
@@ -72,13 +71,18 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
     width: 100%;
-    background: #4292aa;
+    background: #DFD0B8;
     
 }
 nav li:first-child {
     margin-right: auto;
 }
-
+/* the postion of the logo */
+.logo{
+    width: 150px;
+    position: relative;
+    padding-right: 50px;
+}
 .sidebar{
     position: fixed;
     top: 0;
@@ -126,7 +130,7 @@ nav li:first-child {
     text-align: center;
     margin: 0;
     padding: 0;  
-    background-color: #226A80;
+    background-color: #3C5B6F;
     /* background: linear-gradient(#226a8000, rgba(0, 0, 0, 0.582)) , url(../MZAMOMSTSHA-CntrlAltElite/picFolder/marek-piwnicki-AYueVudpWgo-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -143,8 +147,8 @@ nav li:first-child {
 }
 /*-- The Home button--*/
 .butttonHome a{
-    color: black;
-    background: #ffffff;
+    color: #DFD0B8;
+    background: #153448;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -230,9 +234,10 @@ body{
 }
 ul {
     list-style: none;
+    color: #ffffff;
 }
 .homeFooter{
-    background-color: #226A80;
+    background-color: #153448;
     padding: 70px 0;
 }
 .footer-col{
@@ -241,7 +246,7 @@ ul {
 }
 .footer-col h4{
     font-size: 18px;
-    color: #ffffff;
+    color: #DFD0B8;
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 500;
@@ -253,7 +258,7 @@ ul {
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #f1de33;
+	background-color: #948979;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -264,15 +269,14 @@ ul {
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #948979;
 	/* text-decoration: none; */
 	font-weight: 300;
-	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #948979;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -288,8 +292,8 @@ ul {
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+	color: #153448;
+	background-color: #DFD0B8;
 }
 
 /*responsive*/
@@ -309,20 +313,27 @@ ul {
     justify-content: center;
     text-align: center;
 }
-/* ----------- Portfolio section--------- */
-.portfolio{
+
+.Top-aachievers-section{
     padding: 50px 0;
 }
 .work-list{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 .work{
-    border-radius: 10px;
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
+}
+.work p{
+    color: #ffffff;
+}
+.work h3{
+    color: #ffffff;
 }
 .work img{
     width: 100%;
@@ -333,7 +344,7 @@ ul {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #30829bc4);
+    background: linear-gradient( rgba(21, 52, 72, 0.849), rgba(148, 137, 121, 0.822));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -354,11 +365,11 @@ ul {
 }
 .layer a{
     margin-top: 20px;
-    color: #f1bd0f;
+    color: #DFD0B8;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #153448;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -374,11 +385,11 @@ ul {
     display: flex;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #30829bc4;
+    border: 1px solid #153448;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #948979;
     transition: background 1s;
 }
 .btn:hover {
