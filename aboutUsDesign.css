@@ -27,7 +27,7 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color:#fceded;
+    
 }
 nav a:hover{
     background-color: #386c7c00;
@@ -36,14 +36,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-.LogoText h1{
+.nav-text h1{
     color: #000;
     text-decoration: none;
     font-size: 30px;
 }
-.LogoText h1 span{
+.nav-text h1 span{
     color: #4292aa;
     text-decoration: none;
     font-size: 30px;

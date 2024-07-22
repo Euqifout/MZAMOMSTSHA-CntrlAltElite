@@ -4,7 +4,7 @@
 
 
 .homepage{
-    background-color: #4292aa;
+    background-color: #3C5B6F;
 }
 
 .screen{
@@ -20,7 +20,7 @@
 }
 
 nav{
-    background-color:#064d52cc;
+    background-color:#153448;
     box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
 }
 nav ul{
@@ -59,12 +59,12 @@ nav {
     margin-top: 5px;
 }
 .nav-text h1{
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 30px;
 }
 .nav-text h1 span{
-    color: #4292aa;
+    color:  #DFD0B8;
     text-decoration: none;
     font-size: 30px;
 }
@@ -92,7 +92,7 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
     width: 100%;
-    background: #b4ac3e;   
+    background: #DFD0B8;   
 }
 nav li:first-child {
     margin-right: auto;
@@ -152,7 +152,7 @@ nav li:first-child {
 
 .about{
     padding: 80px 0;
-    background-color: #3dcfe9;
+    background-color: #153448;
 }
 .row{
     display: flex;
@@ -170,16 +170,18 @@ nav li:first-child {
 .about-col-2 {
     flex-basis: 60%;
     margin-top: 10%;
+    color: #ffffff;
 }
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #ffffff;
+    color: #DFD0B8;
     margin-top: 5%;
 }
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
+    color: #948979;
 }
 .tab-links {
     margin-right: 50px;
@@ -192,7 +194,7 @@ nav li:first-child {
     content: '';
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: #DFD0B8;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -206,7 +208,7 @@ nav li:first-child {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #ffffff;
+    color: #948979;
     font-size: 16px;
 }
 .tab-contents{
@@ -228,32 +230,40 @@ nav li:first-child {
     margin-top: 50px;
 }
 .service-list div{
-    background:#3dcfe9;
+    background:#3C5B6F;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
+    border-radius: 15px;
     border-right: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 .service-list div i{
     font-size: 50px;
+    color: #DFD0B8 ;
     margin-bottom: 30px;
+}
+.service-list div p{
+    font-size: 20px;
+    color: #DFD0B8 ;
 }
 .service-list div h2{
     font-size: 30px;
+    color: #DFD0B8 ;
     font-weight: 500;
     margin-bottom: 15px;
 }
 .service-list div a{
     text-decoration: none;
-    color: #30829bc4 ;
-    font-size: 12px;
+    color: #948979 ;
+    font-size: 15px;
     margin-top: 20px;
     display: inline-block;
 }
+
 .service-list div:hover{
-    background: #ffffff;
-    transform: translateY(-10px);
+    background: #153448;
+    transform: translateY(-10px);    
 }
 /* ----------- About section--------- */
 .portfolio{
