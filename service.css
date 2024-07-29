@@ -1,0 +1,152 @@
+/* te service page starts here*/
+/* -- removing the default padding and margins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.homepage{
+    background-color: #3C5B6F;
+}
+
+.screen{
+    height: 70vh;
+    overflow: hidden;
+
+}
+.navdisplay{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-direction: row;
+    flex-basis: auto;  
+}
+
+nav{
+    background-color:#153448;
+    box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
+}
+nav h1{
+    color:  #DFD0B8;
+    text-decoration: none;
+    font-size: 25px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: bold;
+}
+nav li{
+    height: 50px; 
+}
+
+nav a {
+    height: 100%;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#fceded;
+}
+nav a:hover{
+    background-color: #386c7c00;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+.nav-text {
+    margin-top: 5px;
+}
+.nav-text h1{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav-text h1 span{
+    color:  #DFD0B8;
+    text-decoration: none;
+    font-size: 25px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a::after {
+    content: '';
+    width: 20%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+    background: #DFD0B8;   
+}
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #22868d3f;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media (max-width: 800px){
+    /* this here tells us the sceen with less then 800pixel wont be dispalyed */
+    .hideOnMoblie{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+/* we making another @media so that the sidebar will be an entire width in smart fones*/
+ @media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+} 
+
+/* the postion of the logo */
+.logo{
+    width: 150px;
+    position: relative;
+    padding-right: 50px;
+}
+/* the nagivation ends here
