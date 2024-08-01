@@ -1,6 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-
+.homepage{
+  background-color: #3C5B6F
+}
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -47,106 +49,150 @@ body {
 
 /* =======nav */
 
+.screen{
+  height: 70vh;
+  overflow: hidden;
+
+}
+.navdisplay{
+  display: flex !important;
+  justify-content: space-evenly !important;
+  flex-direction: row;
+  flex-basis: auto;  
+}
+
 nav{
-    background-color:#064d52cc;
-    box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
+  background-color:#153448;
+  box-shadow: 3px 3px 5px rgba(107, 98, 98, 0.288);
+}
+nav h1{
+  color:  #DFD0B8;
+  text-decoration: none;
+  font-size: 25px;
 }
 nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-    font-size: 23px;
-    font-weight: bold;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  font-size: 23px;
+  font-weight: bold;
 }
 nav li{
-    height: 50px; 
+  height: 50px; 
 }
+
 nav a {
-    height: 100%;
-    padding: 20px 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    
+  height: 100%;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color:#fceded;
 }
 nav a:hover{
-    background-color: #386c7c00;
+  background-color: #386c7c00;
 }
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+.nav-text {
+  margin-top: 5px;
 }
 .nav-text h1{
-    color: #000;
-    text-decoration: none;
-    font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
 }
 .nav-text h1 span{
-    color: #4292aa;
-    text-decoration: none;
-    font-size: 25px;
+  color:  #DFD0B8;
+  text-decoration: none;
+  font-size: 25px;
 }
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    position: relative;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 nav ul li a::after {
-    content: '';
-    width: 20%;
-    height: 3px;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+  content: '';
+  width: 20%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 nav ul li a:hover::after {
-    width: 100%;
-    background: #4292aa;
-    
+  width: 100%;
+  background: #DFD0B8;   
 }
 nav li:first-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: #22868d3f;
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #22868d3f;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 
 }
 .sidebar li{
-    width: 100%;
+  width: 100%;
 }
 .sidebar a{
-    width: 100%;
+  width: 100%;
 }
 .menu-button{
-    display: none;
+  display: none;
 }
+@media (max-width: 800px){
+  /* this here tells us the sceen with less then 800pixel wont be dispalyed */
+  .hideOnMoblie{
+      display: none;
+  }
+  .menu-button{
+      display: block;
+  }
+}
+/* we making another @media so that the sidebar will be an entire width in smart fones*/
+@media(max-width: 400px){
+  .sidebar{
+      width: 100%;
+  }
+} 
+
+/* the postion of the logo */
+.logo{
+  width: 150px;
+  position: relative;
+  padding-right: 50px;
+}
+/* the nagivation ends here
 /* -------------------------------------------*/
 
 img {
@@ -342,4 +388,104 @@ img {
     width: 316px;
     padding-inline: 2.5rem;
   }
+}
+/* every thing that has to do with the footer is here*/
+
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  padding:0;
+}
+.container{
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+}
+ul {
+  list-style: none;
+  color: #ffffff;
+}
+.homeFooter{
+  background-color: #153448;
+  padding: 70px 0;
+  
+}
+.footer-col{
+  width: 25% !important;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #DFD0B8;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+/* we are now styling the content befre the actual content of the selected element that is h4*/
+.footer-col h4::before{
+content: '';
+position: absolute;
+left:0;
+bottom: -10px;
+background-color: #948979;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #948979;
+/* text-decoration: none; */
+font-weight: 300;
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #948979;
+padding-left: 8px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+color: #153448;
+background-color: #DFD0B8;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+.footer-col{
+  width: 50%;
+  margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+.footer-col{
+  width: 100%;
+}
+}
+.text-center_p-3{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: #DFD0B8;
 }

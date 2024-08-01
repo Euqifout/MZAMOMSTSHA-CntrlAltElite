@@ -149,4 +149,235 @@ nav li:first-child {
     position: relative;
     padding-right: 50px;
 }
-/* the nagivation ends here
+/* the nagivation ends here*/
+
+.intakes{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 20%;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+/* .servicePic1{
+    width: 200;
+    height: 633; */
+
+
+.service img{
+    width: 100%;
+
+}
+
+.intakeimg{
+    width: 350px;
+    height: 233%;
+    
+
+}
+.service .service_text{
+    width: 400px;
+    
+} 
+.servicePic1{
+    height: 390px;
+    width: fit-content;
+    position: relative;
+    border-radius: 6%;
+}
+
+
+
+/* every thing that has to do with the footer is here*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+ul {
+    list-style: none;
+    color: #ffffff;
+}
+.homeFooter{
+    background-color: #153448;
+    padding: 70px 0;
+    
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #DFD0B8;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+/* we are now styling the content befre the actual content of the selected element that is h4*/
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #948979;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #948979;
+	/* text-decoration: none; */
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #948979;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #153448;
+	background-color: #DFD0B8;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.text-center_p-3{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: #DFD0B8;
+}
+
+.sub-title {
+    color: rgb(223, 208, 184);
+    font-family: "Sevillana", cursive;
+    font-size: 35px;
+}
+.work-list{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work p{
+    color: rgb(21, 52, 72);
+}
+.work h3{
+    color: rgb(21, 52, 72);
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient( rgb(223, 208, 184), rgba(148, 137, 121, 0.822));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 1s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #DFD0B8;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #153448;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: flex;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #153448;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(223, 208, 184);
+    transition: background 1s;
+}
+.btn:hover {
+    background: rgb(223, 208, 184);
+    color: rgb(21, 52, 72);
+}
