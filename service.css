@@ -7,7 +7,7 @@
 }
 
 .screen{
-    height: 70vh;
+    height: 55vh;
     overflow: hidden;
 
 }
@@ -172,22 +172,25 @@ nav li:first-child {
 }
 
 .intakeimg{
-    width: 350px;
+    width: 400px;
     height: 233%;
-    
-
 }
 .service .service_text{
     width: 400px;
     
 } 
 .servicePic1{
-    height: 390px;
+    height: 350px;
     width: fit-content;
     position: relative;
     border-radius: 6%;
 }
-
+.service_text h2{
+   color:  #ffffff;
+}
+.service_text p{
+    color:  #DFD0B8;
+ }
 
 
 /* every thing that has to do with the footer is here*/
