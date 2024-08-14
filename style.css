@@ -30,11 +30,9 @@ nav h1{
 }
 nav ul{
     width: 100%;
-    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: aliceblue;
     font-size: 23px;
     font-weight: bold;
 }
