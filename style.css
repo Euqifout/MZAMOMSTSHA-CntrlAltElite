@@ -455,8 +455,8 @@ nav li:first-child {
     background-position: center;
 }
 .gradient-brand-color {
-    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
-    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    background-image: -webkit-linear-gradient(0deg, #153448 0%, #153448 100%);
+    background-image: -ms-linear-gradient(0deg, #226a808e 0%, #226a808e 100%);
     color: #fff;
 }
 .contact-info__wrapper {
