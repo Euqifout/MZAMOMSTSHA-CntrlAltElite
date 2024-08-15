@@ -12,8 +12,8 @@ const initSlider = () => {
        })
     })
 }
-
 window.addEventListener("load", initSlider);
+
 /* this is the navigation part */
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
