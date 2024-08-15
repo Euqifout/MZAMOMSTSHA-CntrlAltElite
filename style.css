@@ -6,11 +6,9 @@
 .homepage{
     background-color: #3C5B6F;
 }
-
 .screen{
     height: 70vh;
     overflow: hidden;
-
 }
 .navdisplay{
     display: flex !important;
