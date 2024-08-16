@@ -524,8 +524,8 @@ ul {
     padding: 0 15px;
 }
 .footer-col h4{
-    font-size: 18px;
-    color: #DFD0B8;
+    font-size: 25px;
+    color: #b9a88d;
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 500;
@@ -546,9 +546,9 @@ ul {
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 18px;
 	text-transform: capitalize;
-	color: #948979;
+	color:#ffffff ;
 	/* text-decoration: none; */
 	font-weight: 300;
 	display: block;
@@ -572,7 +572,7 @@ ul {
 }
 .footer-col .social-links a:hover{
 	color: #153448;
-	background-color: #DFD0B8;
+	background-color: #b9b6b6;
 }
 
 /*responsive*/
