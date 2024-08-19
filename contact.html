@@ -125,7 +125,61 @@
             </div>
         </div>
     </div>
+<!-- the contact form validation-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
 
+    form.addEventListener("submit", function(event) {
+        let isValid = true;
+        let errorMessages = [];
+
+        // Validate first name
+        const firstName = document.getElementById("firstName").value.trim();
+        if (!/^[A-Za-z]+$/.test(firstName)) {
+            isValid = false;
+            errorMessages.push("Please enter a valid First Name without numbers or special characters.");
+        }
+
+        // Validate last name
+        const lastName = document.getElementById("lastName").value.trim();
+        if (!/^[A-Za-z]+$/.test(lastName)) {
+            isValid = false;
+            errorMessages.push("Please enter a valid Last Name without numbers or special characters.");
+        }
+
+        // Validate email
+        const email = document.getElementById("email").value.trim();
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            isValid = false;
+            errorMessages.push("Please enter a valid Email address.");
+        }
+
+        // Validate phone (optional)
+        const phone = document.getElementById("phone").value.trim();
+        if (phone && !/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phone)) {
+            isValid = false;
+            errorMessages.push("Please enter a valid Phone Number.");
+        }
+
+        // Validate message
+        const message = document.getElementById("message").value.trim();
+        if (message.length < 10) {
+            isValid = false;
+            errorMessages.push("Please enter a message with at least 10 characters.");
+        }
+
+        // If form is invalid, prevent submission and show error messages
+        if (!isValid) {
+            event.preventDefault();
+            const errorDiv = document.getElementById("errorMessages");
+            errorDiv.innerHTML = errorMessages.join("<br>");
+        }
+    });
+});
+
+    </script>
     <!-- Footer -->
     <br> 
     <footer class="homeFooter">
@@ -179,3 +233,4 @@
     
 </html>
                
+
